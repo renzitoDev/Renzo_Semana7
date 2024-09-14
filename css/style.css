@@ -11,15 +11,47 @@ html{
 
 header{
   background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 60px;
+}
+
+.logo img{
+  border-radius: 55%;
+  border: 2px solid black;
 }
 
 h1:hover{
-  transform: scale(0.4);
-  box-shadow: 11px 8px 15px 23px;
+  transform: scale(0.6);
+  text-shadow: 2px 2px 9px black;
+  color: rgb(225, 236, 236);
+  font-family: cursive;
+  transition-delay: 0.4ms;
 }
 
 nav{
   background-color: chartreuse;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a{
+  background-color: cadetblue;
+  border-radius: 28px;
+  text-decoration: none;
+  padding: 8px;
+  color:white;
+
+}
+
+nav a:hover{
+  background-color: white;
+  color: cadetblue;
+  transition-delay: 0.1s;
 }
 
 main{
@@ -37,22 +69,53 @@ main{
 
   img{
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     transition:transform 1s ease;
   }
 
 img:hover{
   transform: scale(1.2);
   opacity: 0.5; /* Mostrar la imagen al pasar el mouse */
-  transform: translate(5%) scale(1.5);
+  transform: translate(20%) scale(1.2);
 }
 
   .contenedor {
     text-align: center; /* Centrar el texto */
 }
 
+.colorp{
+  width: 50%;
+  border: 1px solid black;
+  margin:0 auto;
+  padding: 50px;
+  text-align:center;
+  align-items: center;
+  box-shadow: 6px 8px 5px 10px;
+}
+
+h2{
+  color: darkslategrey;
+}
+
+section > h2{
+  color: blue;
+  /* > es = hijo directo de  */
+}
+
+.imagen + p{
+  color: blueviolet;
+  background-color: cadetblue;
+}
+
+.block img{
+  display:block;
+  width: 250px;
+  padding: 30px;
+}
+
 footer{
   background-color: burlywood;
+  margin-bottom: 50px;
 }
 .rotar {
   transition: transform 0.3s ease; /* Transición suave para la rotación */
