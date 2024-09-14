@@ -1,0 +1,16 @@
+body{
+    box-sizing:border-box;
+    border:2px solid;
+}
+
+p {
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid;
+  }
+
+  img{
+    padding: 20px;
+    border: 1px solid;
+  }
